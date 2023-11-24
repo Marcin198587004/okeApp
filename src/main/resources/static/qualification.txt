@@ -1,0 +1,678 @@
+A.01	(818116) Operator urządzeń przemysłu szklarskiego
+A.02	(818115) Operator urządzeń przemysłu ceramicznego
+A.03	(818115) Operator urządzeń przemysłu ceramicznego
+A.04	(815204) Operator maszyn w przemyśle włókienniczym
+A.05	(815204) Operator maszyn w przemyśle włókienniczym
+A.06	(813134) Operator urządzeń przemysłu chemicznego
+A.07	(753702) Kaletnik
+A.10	(753402) Tapicer
+A.12	(753105) Krawiec
+A.13	(752205) Stolarz
+A.14	(732301) Introligator
+A.15	(732201) Drukarz
+A.16	(731808) Rękodzielnik wyrobów włókienniczych
+A.17	(731702) Koszykarz-plecionkarz
+A.18	(522301) Sprzedawca
+A.19	(514101) Fryzjer
+A.20	(343101) Fotograf
+A.21	(522306) Technik księgarstwa
+A.22	(522305) Technik handlowiec
+A.23	(eksperyment pedagogiczny) Technik stylista (eksperyment pedagogiczny – 3 kwalifikacje)
+A.24	(411004) Technik prac biurowych
+A.25	(343104) Fototechnik
+A.26	(333906) Technik organizacji reklamy
+A.27	(333906) Technik organizacji reklamy
+A.28	(333108) Technik spedytor
+A.29	(333108) Technik spedytor
+A.30	(333107) Technik logistyk
+A.31	(333107) Technik logistyk
+A.32	(333107) Technik logistyk
+A.33	(333106) Technik eksploatacji portów i terminali
+A.34	(333106) Technik eksploatacji portów i terminali
+A.35	(331403) Technik ekonomista
+A.36	(331403) Technik ekonomista
+A.37	(315216) Technik żeglugi śródlądowej
+A.38	(315216) Technik żeglugi śródlądowej
+A.39	(315214) Technik nawigator morski
+A.40	(311935) Technik procesów drukowania
+A.42	(311931) Technik włókienniczych wyrobów dekoracyjnych
+A.43	(311931) Technik włókienniczych wyrobów dekoracyjnych
+A.44	(311928) Technik transportu kolejowego
+A.45	(311928) Technik transportu kolejowego
+A.47	(311925) Technik technologii szkła
+A.48	(eksperyment pedagogiczny) Technik stylista (eksperyment pedagogiczny – 3 kwalifikacje)
+A.49	(311924) Technik technologii odzieży
+A.50	(311922) Technik technologii drewna
+A.52	(753602) Obuwnik
+A.54	(311911) Technik cyfrowych procesów graficznych
+A.55	(311911) Technik cyfrowych procesów graficznych
+A.56	(311603) Technik technologii chemicznej
+A.57	(311601) Technik papiernictwa
+A.58	(311601) Technik papiernictwa
+A.59	(311103) Technik analityk
+A.60	(311103) Technik analityk
+A.61	(514207) Technik usług kosmetycznych
+A.62	(514207) Technik usług kosmetycznych
+A.63	(441403) Technik archiwista
+A.64	(441403) Technik archiwista
+A.65	(431103) Technik rachunkowości
+A.66	(421108) Technik usług pocztowych i finansowych
+A.67	(421108) Technik usług pocztowych i finansowych
+A.68	(334306) Technik administracji
+A.69	(311927) Technik transportu drogowego
+A.70	(311927) Technik transportu drogowego
+A.71	(311941) Technik przemysłu mody
+A.74	(311941) Technik przemysłu mody
+AU.04	(832201) Kierowca mechanik
+AU.05	(818116) Operator urządzeń przemysłu szklarskiego
+AU.07	(815204) Operator maszyn w przemyśle włókienniczym
+AU.08	(813134) Operator urządzeń przemysłu chemicznego
+AU.09	(753702) Kaletnik
+AU.12	(753402) Tapicer
+AU.14	(753105) Krawiec
+AU.15	(752205) Stolarz
+AU.16	(732301) Introligator
+AU.17	(732201) Drukarz
+AU.18	(731808) Rękodzielnik wyrobów włókienniczych
+AU.19	(731702) Koszykarz-plecionkarz
+AU.20	(522301) Sprzedawca
+AU.21	(514101) Fryzjer
+AU.22	(432106) Magazynier-logistyk
+AU.23	(343101) Fotograf
+AU.24	(522306) Technik księgarstwa
+AU.25	(522305) Technik handlowiec
+AU.26	(eksperyment pedagogiczny) Technik stylista (eksperyment pedagogiczny – 2 kwalifikacje)
+AU.27	(411004) Technik prac biurowych
+AU.28	(343104) Technik fotografii i multimediów
+AU.29	(333906) Technik organizacji reklamy
+AU.30	(333906) Technik organizacji reklamy
+AU.31	(333108) Technik spedytor
+AU.32	(333107) Technik logistyk
+AU.33	(333106) Technik eksploatacji portów i terminali
+AU.34	(333106) Technik eksploatacji portów i terminali
+AU.35	(331403) Technik ekonomista
+AU.36	(331403) Technik ekonomista
+AU.39	(315216) Technik żeglugi śródlądowej
+AU.40	(315216) Technik żeglugi śródlądowej
+AU.41	(315214) Technik nawigator morski
+AU.42	(311941) Technik przemysłu mody
+AU.43	(311935) Technik procesów drukowania
+AU.45	(311931) Technik włókienniczych wyrobów dekoracyjnych
+AU.46	(311928) Technik transportu kolejowego
+AU.47	(311928) Technik transportu kolejowego
+AU.49	(311925) Technik technologii szkła
+AU.50	(311922) Technik technologii drewna
+AU.54	(311943) Technik grafiki i poligrafii cyfrowej
+AU.55	(311943) Technik grafiki i poligrafii cyfrowej
+AU.56	(311603) Technik technologii chemicznej
+AU.57	(311601) Technik papiernictwa
+AU.58	(311601) Technik papiernictwa
+AU.59	(311103) Technik analityk
+AU.60	(311103) Technik analityk
+AU.61	(514207) Technik usług kosmetycznych
+AU.62	(514207) Technik usług kosmetycznych
+AU.63	(441403) Technik archiwista
+AU.64	(441403) Technik archiwista
+AU.65	(431103) Technik rachunkowości
+AU.66	(421108) Technik usług pocztowych i finansowych
+AU.67	(421108) Technik usług pocztowych i finansowych
+AU.68	(334306) Technik administracji
+AU.69	(311927) Technik transportu drogowego
+AUD.01	(343902) Asystent kierownika produkcji filmowej/telewizyjnej
+AUD.02	(343101) Fotograf
+AUD.03	(311945) Technik budowy i strojenia fortepianów i pianin
+AUD.04	(311945) Technik budowy i strojenia fortepianów i pianin
+AUD.05	(343104) Technik fotografii i multimediów
+AUD.06	(352120) Technik realizacji dźwięku
+AUD.07	(352120) Technik realizacji dźwięku
+AUD.08	(352123) Technik realizacji nagrań
+AUD.09	(352123) Technik realizacji nagrań
+B.01	(834201) Mechanik maszyn i urządzeń drogowych
+B.02	(834201) Mechanik maszyn i urządzeń drogowych
+B.03	(721303) Blacharz izolacji przemysłowych
+B.05	(712905) Monter zabudowy i robót wykończeniowych w budownictwie
+B.06	(712905) Monter zabudowy i robót wykończeniowych w budownictwie
+B.07	(712905) Monter zabudowy i robót wykończeniowych w budownictwie
+B.08	(712616) Monter sieci, instalacji i urządzeń sanitarnych
+B.09	(712616) Monter sieci, instalacji i urządzeń sanitarnych
+B.10	(712403) Monter izolacji przemysłowych
+B.11	(712401) Monter izolacji budowlanych
+B.12	(712101) Dekarz
+B.15	(711501) Cieśla
+B.16	(711402) Betoniarz-zbrojarz
+B.16	(311204) Technik budownictwa
+B.18	(711204) Murarz-tynkarz
+B.20	(711102) Monter konstrukcji budowlanych
+B.21	(311930) Technik urządzeń i systemów energetyki odnawialnej
+B.22	(311930) Technik urządzeń i systemów energetyki odnawialnej
+B.23	(311913) Technik gazownictwa
+B.24	(311913) Technik gazownictwa
+B.25	(311210) Technik renowacji elementów architektury
+B.26	(311210) Technik renowacji elementów architektury
+B.27	(311209) Technik urządzeń sanitarnych
+B.28	(311207) Technik dróg i mostów kolejowych
+B.29	(311207) Technik dróg i mostów kolejowych
+B.30	(311204) Technik budownictwa
+B.32	(311206) Technik drogownictwa
+B.33	(311204) Technik budownictwa
+B.34	(311104) Technik geodeta
+B.35	(311104) Technik geodeta
+B.36	(311104) Technik geodeta
+BD.01	(834209) Operator maszyn i urządzeń do robót ziemnych i drogowych
+BD.02	(721303) Blacharz izolacji przemysłowych
+BD.04	(712905) Monter zabudowy i robót wykończeniowych w budownictwie
+BD.05	(712618) Monter sieci i instalacji sanitarnych
+BD.06	(712403) Monter izolacji przemysłowych
+BD.07	(712401) Monter izolacji budowlanych
+BD.08	(712101) Dekarz
+BD.11	(711501) Cieśla
+BD.12	(711402) Betoniarz-zbrojarz
+BD.14	(711204) Murarz-tynkarz
+BD.16	(711102) Monter konstrukcji budowlanych
+BD.17	(311930) Technik urządzeń i systemów energetyki odnawialnej
+BD.18	(311930) Technik urządzeń i systemów energetyki odnawialnej
+BD.19	(311913) Technik gazownictwa
+BD.20	(311913) Technik gazownictwa
+BD.21	(311219) Technik robót wykończeniowych w budownictwie
+BD.22	(311218) Technik inżynierii sanitarnej
+BD.25	(311216) Technik budowy dróg
+BD.26	(311210) Technik renowacji elementów architektury
+BD.27	(311210) Technik renowacji elementów architektury
+BD.29	(311204) Technik budownictwa
+BD.30	(311204) Technik budownictwa
+BD.31	(311104) Technik geodeta
+BD.32	(311104) Technik geodeta
+BPO.01	(325509) Technik bezpieczeństwa i higieny pracy
+BPO.02	(541315) Technik ochrony fizycznej osób i mienia
+BPO.03	(311919) Technik pożarnictwa
+BPO.04	(311919) Technik pożarnictwa
+BUD.01	(711402) Betoniarz-zbrojarz
+BUD.02	(711501) Cieśla
+BUD.03	(712101) Dekarz
+BUD.04	(711301) Kamieniarz
+BUD.05	(713303) Kominiarz
+BUD.06	(712401) Monter izolacji budowlanych
+BUD.07	(712403) Monter izolacji przemysłowych
+BUD.08	(711102) Monter konstrukcji budowlanych
+BUD.09	(712618) Monter sieci i instalacji sanitarnych
+BUD.10	(712906) Monter stolarki budowlanej
+BUD.11	(712905) Monter zabudowy i robót wykończeniowych w budownictwie
+BUD.12	(711204) Murarz-tynkarz
+BUD.13	(834209) Operator maszyn i urządzeń do robót ziemnych i drogowych
+BUD.14	(311204) Technik budownictwa
+BUD.15	(311216) Technik budowy dróg
+BUD.16	(311913) Technik gazownictwa
+BUD.17	(311913) Technik gazownictwa
+BUD.18	(311104) Technik geodeta
+BUD.19	(311104) Technik geodeta
+BUD.20	(311218) Technik inżynierii sanitarnej
+BUD.21	(311208) Technik inżynierii środowiska i melioracji
+BUD.22	(311208) Technik inżynierii środowiska i melioracji
+BUD.23	(311210) Technik renowacji elementów architektury
+BUD.24	(311210) Technik renowacji elementów architektury
+BUD.25	(311219) Technik robót wykończeniowych w budownictwie
+CES.01	(818115) Operator urządzeń przemysłu ceramicznego
+CES.02	(818116) Operator urządzeń przemysłu szklarskiego
+CES.03	(311944) Technik ceramik
+CES.04	(311925) Technik technologii szkła
+CES.05	(311944) Technik ceramik
+CHM.01	(814290) Operator maszyn i urządzeń do przetwórstwa tworzyw sztucznych
+CHM.02	(813134) Operator urządzeń przemysłu chemicznego
+CHM.03	(311103) Technik analityk
+CHM.04	(311103) Technik analityk
+CHM.05	(325511) Technik ochrony środowiska
+CHM.06	(311603) Technik technologii chemicznej
+DRM.01	(731702) Koszykarz-plecionkarz
+DRM.02	(817212) Mechanik-operator maszyn do produkcji drzewnej
+DRM.03	(932918) Pracownik pomocniczy stolarza
+DRM.04	(752205) Stolarz
+DRM.05	(753402) Tapicer
+DRM.06	(311601) Technik papiernictwa
+DRM.07	(311601) Technik papiernictwa
+DRM.08	(311922) Technik technologii drewna
+E.01	(742202) Monter sieci i urządzeń telekomunikacyjnych
+E.02	(742202) Monter sieci i urządzeń telekomunikacyjnych
+E.03	(742114) Monter mechatronik
+E.04	(742114) Monter mechatronik
+E.05	(742102) Monter-elektronik
+E.06	(742102) Monter-elektronik
+E.07	(741201) Elektromechanik
+E.08	(741103) Elektryk
+E.09	(352203) Technik telekomunikacji
+E.10	(352203) Technik telekomunikacji
+E.11	(351204) Technik tyfloinformatyk
+E.12	(351203) Technik informatyk
+E.13	(351203) Technik informatyk
+E.14	(351203) Technik informatyk
+E.15	(351103) Technik teleinformatyk
+E.16	(351103) Technik teleinformatyk
+E.17	(315316) Technik awionik
+E.18	(311410) Technik mechatronik
+E.19	(311410) Technik mechatronik
+E.20	(311408) Technik elektronik
+E.21	(311407) Technik automatyk sterowania ruchem kolejowym
+E.22	(311307) Technik energetyk
+E.23	(311307) Technik energetyk
+E.24	(311303) Technik elektryk
+E.25	(311302) Technik elektroenergetyk transportu szynowego
+E.26	(311302) Technik elektroenergetyk transportu szynowego
+EE.01	(742202) Monter sieci i urządzeń telekomunikacyjnych
+EE.02	(742118) Mechatronik
+EE.03	(742117) Elektronik
+EE.04	(741201) Elektromechanik
+EE.05	(741103) Elektryk
+EE.06	(352203) Technik telekomunikacji
+EE.07	(351204) Technik tyfloinformatyk
+EE.08	(351203) Technik informatyk
+EE.09	(eksperyment pedagogiczny) Technik elektromobilności
+EE.10	(351103) Technik teleinformatyk
+EE.11	(351103) Technik teleinformatyk
+EE.12	(315316) Technik awionik
+EE.15	(311929) Technik chłodnictwa i klimatyzacji
+EE.16	(311929) Technik chłodnictwa i klimatyzacji
+EE.21	(311410) Technik mechatronik
+EE.22	(311408) Technik elektronik
+EE.23	(311407) Technik automatyk sterowania ruchem kolejowym
+EE.24	(311307) Technik energetyk
+EE.25	(311307) Technik energetyk
+EE.26	(311303) Technik elektryk
+EE.27	(311302) Technik elektroenergetyk transportu szynowego
+EE.28	(311302) Technik elektroenergetyk transportu szynowego
+EE.29	(311411) Technik elektroniki i informatyki medycznej
+EKA.01	(334306) Technik administracji
+EKA.02	(441403) Technik archiwista
+EKA.03	(441403) Technik archiwista
+EKA.04	(331403) Technik ekonomista
+EKA.05	(331403) Technik ekonomista
+EKA.06	(411004) Technik prac biurowych
+EKA.07	(431103) Technik rachunkowości
+EKA.08	(421108) Technik usług pocztowych i finansowych
+ELE.01	(741201) Elektromechanik
+ELE.02	(741103) Elektryk
+ELE.03	(311929) Technik chłodnictwa i klimatyzacji
+ELE.04	(311929) Technik chłodnictwa i klimatyzacji
+ELE.05	(311303) Technik elektryk
+ELE.06	(311307) Technik energetyk
+ELE.07	(311307) Technik energetyk
+ELE.08	(311940) Technik urządzeń dźwigowych
+ELE.09	(311940) Technik urządzeń dźwigowych
+ELE.10	(311930) Technik urządzeń i systemów energetyki odnawialnej
+ELE.11	(311930) Technik urządzeń i systemów energetyki odnawialnej
+ELM.01	(731107) Automatyk
+ELM.02	(742117) Elektronik
+ELM.03	(742118) Mechatronik
+ELM.05	(311408) Technik elektronik
+ELM.06	(311410) Technik mechatronik
+FRK.01	(514101) Fryzjer
+FRK.02	(932920) Pracownik pomocniczy fryzjera
+FRK.03	(eksperyment pedagogiczny) Technik stylista (eksperyment pedagogiczny – 2 kwalifikacje)
+FRK.04	(514207) Technik usług kosmetycznych
+GIW.01	(811301) Górnik eksploatacji otworowej
+GIW.02	(811101) Górnik eksploatacji podziemnej
+GIW.03	(811102) Górnik odkrywkowej eksploatacji złóż
+GIW.04	(811112) Górnik podziemnej eksploatacji kopalin innych niż węgiel kamienny
+GIW.05	(311706) Technik przeróbki kopalin stałych
+GIW.06	(311106) Technik geolog
+GIW.07	(311701) Technik górnictwa odkrywkowego
+GIW.08	(311702) Technik górnictwa otworowego
+GIW.09	(311703) Technik górnictwa podziemnego
+GIW.10	(311709) Technik podziemnej eksploatacji kopalin innych niż węgiel kamienny
+GIW.11	(311706) Technik przeróbki kopalin stałych
+GIW.12	(311707) Technik wiertnik
+GIW.13	(311707) Technik wiertnik
+HAN.01	(522301) Sprzedawca
+HAN.02	(522305) Technik handlowiec
+HAN.03	(522306) Technik księgarstwa
+HGT.01	(513101) Kelner
+HGT.02	(512001) Kucharz
+HGT.03	(962907) Pracownik obsługi hotelowej
+HGT.04	(941203) Pracownik pomocniczy gastronomii
+HGT.05	(911205) Pracownik pomocniczy obsługi hotelowej
+HGT.06	(422402) Technik hotelarstwa
+HGT.07	(422104) Technik organizacji turystyki(Technik obsługi turystycznej)
+HGT.08	(422104) Technik organizacji turystyki(Technik obsługi turystycznej)
+HGT.09	(515205) Technik turystyki na obszarach wiejskich
+HGT.10	(515205) Technik turystyki na obszarach wiejskich
+HGT.11	(513102) Technik usług kelnerskich
+HGT.12	(343404) Technik żywienia i usług gastronomicznych
+INF.01	(742202) Monter sieci i urządzeń telekomunikacyjnych
+INF.02	(351203) Technik informatyk
+INF.03	(eksperyment pedagogiczny) Technik elektromobilności
+INF.04	(351406) Technik programista
+INF.05	(311412) Technik szerokopasmowej komunikacji elektronicznej
+INF.06	(311412) Technik szerokopasmowej komunikacji elektronicznej
+INF.07	(351103) Technik teleinformatyk
+INF.08	(351103) Technik teleinformatyk
+INF.09	(352203) Technik telekomunikacji
+INF.10	(351204) Technik tyfloinformatyk
+LES.02	(314301) Technik leśnik
+M.01	(834103) Mechanik-operator pojazdów i maszyn rolniczych
+M.02	(834103) Mechanik-operator pojazdów i maszyn rolniczych
+M.03	(814290) Operator maszyn i urządzeń do przetwórstwa tworzyw sztucznych
+M.04	(812107) Operator maszyn i urządzeń odlewniczych
+M.05	(812107) Operator maszyn i urządzeń odlewniczych
+M.06	(812106) Operator maszyn i urządzeń metalurgicznych
+M.07	(812105) Operator maszyn i urządzeń do obróbki plastycznej
+M.08	(311707) Technik wiertnik
+M.09	(811301) Górnik eksploatacji otworowej
+M.10	(811102) Górnik odkrywkowej eksploatacji złóż
+M.11	(811101) Górnik eksploatacji podziemnej
+M.12	(741203) Elektromechanik pojazdów samochodowych
+M.14	(731104) Optyk-mechanik
+M.15	(731103) Mechanik precyzyjny
+M.16	(731107) Automatyk
+M.17	(723310) Mechanik-monter maszyn i urządzeń
+M.17	(311504) Technik mechanik
+M.18	(723103) Mechanik pojazdów samochodowych
+M.19	(722307) Operator obrabiarek skrawających
+M.20	(722204) Ślusarz
+M.21	(722101) Kowal
+M.22	(721402) Monter kadłubów okrętowych
+M.23	(721402) Monter kadłubów okrętowych
+M.24	(721306) Blacharz samochodowy
+M.25	(721301) Blacharz
+M.28	(713201) Lakiernik
+M.30	(325302) Technik optyk
+M.31	(315317) Technik mechanik lotniczy
+M.32	(315105) Technik mechanik okrętowy
+M.33	(311910) Technik budownictwa okrętowego
+M.34	(311707) Technik wiertnik
+M.35	(311706) Technik przeróbki kopalin stałych
+M.36	(311706) Technik przeróbki kopalin stałych
+M.37	(311705) Technik odlewnik
+M.38	(311704) Technik hutnik
+M.39	(311703) Technik górnictwa podziemnego
+M.40	(311702) Technik górnictwa otworowego
+M.41	(311701) Technik górnictwa odkrywkowego
+M.42	(311513) Technik pojazdów samochodowych
+M.43	(311512) Technik mechanizacji rolnictwa
+M.44	(311504) Technik mechanik
+M.45	(723107) Mechanik motocyklowy
+MEC.01	(721301) Blacharz
+MEC.02	(722101) Kowal
+MEC.03	(723310) Mechanik-monter maszyn i urządzeń
+MEC.04	(712613) Monter systemów rurociągowych
+MEC.05	(722307) Operator obrabiarek skrawających
+MEC.07	(932917) Pracownik pomocniczy ślusarza
+MEC.08	(722204) Ślusarz
+MEC.09	(311504) Technik mechanik
+MEC.10	(311516) Technik spawalnictwa
+MED.01	(325101) Asystentka stomatologiczna
+MED.02	(325102) Higienistka stomatologiczna
+MED.03	(532102) Opiekun medyczny
+MED.04	(325906) Ortoptystka
+MED.05	(321401) Protetyk słuchu
+MED.06	(321402) Technik dentystyczny
+MED.07	(311411) Technik elektroniki i informatyki medycznej
+MED.08	(321103) Technik elektroradiolog
+MED.09	(321301) Technik farmaceutyczny
+MED.10	(325402) Technik masażysta
+MED.11	(321403) Technik ortopeda
+MED.12	(321104) Technik sterylizacji medycznej
+MED.13	(325907) Terapeuta zajęciowy
+MEP.01	(731103) Mechanik precyzyjny
+MEP.02	(731104) Optyk-mechanik
+MEP.03	(325302) Technik optyk
+MEP.05	(731305) Złotnik-jubiler
+MG.0	(311702) Technik górnictwa otworowego
+MG.03	(311515) Technik mechanizacji rolnictwa i agrotroniki
+MG.03	(834103) Mechanik-operator pojazdów i maszyn rolniczych
+MG.05	(814290) Operator maszyn i urządzeń do przetwórstwa tworzyw sztucznych
+MG.06	(812107) Operator maszyn i urządzeń odlewniczych
+MG.07	(812121) Operator maszyn i urządzeń hutniczych
+MG.08	(311707) Technik wiertnik
+MG.09	(811301) Górnik eksploatacji otworowej
+MG.10	(811102) Górnik odkrywkowej eksploatacji złóż
+MG.11	(811101) Górnik eksploatacji podziemnej
+MG.12	(741203) Elektromechanik pojazdów samochodowych
+MG.12	(311513) Technik pojazdów samochodowych
+MG.14	(731104) Optyk-mechanik
+MG.15	(731103) Mechanik precyzyjny
+MG.16	(731107) Automatyk
+MG.17	(723310) Mechanik-monter maszyn i urządzeń
+MG.17	(311504) Technik mechanik
+MG.18	(723103) Mechanik pojazdów samochodowych
+MG.19	(722307) Operator obrabiarek skrawających
+MG.20	(722204) Ślusarz
+MG.21	(722101) Kowal
+MG.22	(721406) Monter kadłubów jednostek pływających
+MG.24	(721306) Blacharz samochodowy
+MG.25	(721301) Blacharz
+MG.27	(713201) Lakiernik
+MG.30	(325302) Technik optyk
+MG.31	(315317) Technik mechanik lotniczy
+MG.32	(315105) Technik mechanik okrętowy
+MG.34	(311707) Technik wiertnik
+MG.35	(311706) Technik przeróbki kopalin stałych
+MG.36	(311706) Technik przeróbki kopalin stałych
+MG.37	(311705) Technik odlewnik
+MG.38	(311704) Technik hutnik
+MG.39	(311703) Technik górnictwa podziemnego
+MG.40	(311702) Technik górnictwa otworowego
+MG.41	(311701) Technik górnictwa odkrywkowego
+MG.42	(311515) Technik mechanizacji rolnictwa i agrotroniki
+MG.43	(311513) Technik pojazdów samochodowych
+MG.44	(311504) Technik mechanik
+MOD.01	(311912) Technik garbarz
+MOD.02	(753702) Kaletnik
+MOD.03	(753105) Krawiec
+MOD.04	(753106) Kuśnierz
+MOD.05	(753602) Obuwnik
+MOD.06	(815204) Operator maszyn w przemyśle włókienniczym
+MOD.08	(731808) Rękodzielnik wyrobów włókienniczych
+MOD.09	(311912) Technik garbarz
+MOD.10	(422103) Technik obuwnik
+MOD.11	(311941) Technik przemysłu mody
+MOD.12	(311926) Technik technologii wyrobów skórzanych
+MOD.13	(311931) Technik włókienniczych wyrobów dekoracyjnych
+MOD.14	(311932) Technik włókiennik
+MOT.01	(721306) Blacharz samochodowy
+MOT.02	(741203) Elektromechanik pojazdów samochodowych
+MOT.03	(713203) Lakiernik samochodowy
+MOT.04	(723107) Mechanik motocyklowy
+MOT.05	(723103) Mechanik pojazdów samochodowych
+MOT.06	(311513) Technik pojazdów samochodowych
+MS.01	(325402) Technik masażysta
+MS.02	(321403) Technik ortopeda
+MS.03	(541315) Technik ochrony fizycznej osób i mienia
+MS.04	(532102) Opiekun medyczny
+MS.05	(341204) Opiekunka środowiskowa
+MS.06	(341203) Opiekun w domu pomocy społecznej
+MS.07	(341202) Opiekun osoby starszej
+MS.08	(341201) Asystent osoby niepełnosprawnej
+MS.09	(325907) Terapeuta zajęciowy
+MS.10	(325906) Ortoptystka
+MS.11	(325905) Opiekunka dziecięca
+MS.12	(325509) Technik bezpieczeństwa i higieny pracy
+MS.13	(325102) Higienistka stomatologiczna
+MS.14	(325101) Asystentka stomatologiczna
+MS.15	(321402) Technik dentystyczny
+MS.16	(321401) Protetyk słuchu
+MS.17	(321301) Technik farmaceutyczny
+MS.18	(321104) Technik sterylizacji medycznej
+MS.19	(321103) Technik elektroradiolog
+MS.20	(311919) Technik pożarnictwa
+MS.21	(311919) Technik pożarnictwa
+MTL.01	(721104) Modelarz odlewniczy
+MTL.02	(812107) Operator maszyn i urządzeń odlewniczych
+MTL.03	(812122) Operator maszyn i urządzeń przemysłu metalurgicznego
+MTL.05	(311708) Technik przemysłu metalurgicznego
+OGR.01	(343203) Florysta
+OGR.02	(611303) Ogrodnik
+OGR.03	(314202) Technik architektury krajobrazu
+OGR.04	(314202) Technik architektury krajobrazu
+OGR.05	(314205) Technik ogrodnik
+PGF.01	(732209) Drukarz fleksograficzny
+PGF.02	(732210) Drukarz offsetowy
+PGF.03	(732305) Operator procesów introligatorskich
+PGF.04	(311943) Technik grafiki i poligrafii cyfrowej
+PGF.05	(311943) Technik grafiki i poligrafii cyfrowej
+PGF.06	(311935) Technik procesów drukowania
+PGF.07	(333907) Technik reklamy
+PGF.08	(333907) Technik reklamy
+R.03	(613003) Rolnik
+R.04	(612302) Pszczelarz
+R.05	(611303) Ogrodnik
+R.06	(331402) Technik agrobiznesu
+R.07	(325511) Technik ochrony środowiska
+R.08	(325511) Technik ochrony środowiska
+R.09	(324002) Technik weterynarii
+R.10	(324002) Technik weterynarii
+R.11	(324002) Technik weterynarii
+R.13	(314301) Technik leśnik
+R.14	(314301) Technik leśnik
+R.16	(314207) Technik rolnik
+R.17	(314206) Technik pszczelarz
+R.18	(314205) Technik ogrodnik
+R.19	(314203) Technik hodowca koni
+R.20	(314203) Technik hodowca koni
+R.21	(314202) Technik architektury krajobrazu
+R.22	(314202) Technik architektury krajobrazu
+R.23	(311208) Technik inżynierii środowiska i melioracji
+R.24	(311208) Technik inżynierii środowiska i melioracji
+R.25	(311106) Technik geolog
+R.26	(343203) Florysta
+RL.03	(613003) Rolnik
+RL.04	(612302) Pszczelarz
+RL.05	(611303) Ogrodnik
+RL.07	(331402) Technik agrobiznesu
+RL.08	(325511) Technik ochrony środowiska
+RL.09	(325511) Technik ochrony środowiska
+RL.10	(324002) Technik weterynarii
+RL.11	(324002) Technik weterynarii
+RL.13	(314301) Technik leśnik
+RL.14	(314301) Technik leśnik
+RL.16	(314207) Technik rolnik
+RL.17	(314206) Technik pszczelarz
+RL.18	(314205) Technik ogrodnik
+RL.19	(314203) Technik hodowca koni
+RL.20	(314203) Technik hodowca koni
+RL.21	(314202) Technik architektury krajobrazu
+RL.22	(314202) Technik architektury krajobrazu
+RL.23	(311208) Technik inżynierii środowiska i melioracji
+RL.24	(311208) Technik inżynierii środowiska i melioracji
+RL.25	(311106) Technik geolog
+RL.26	(343203) Florysta
+ROL.01	(516408) Jeździec
+ROL.02	(834103) Mechanik-operator pojazdów i maszyn rolniczych
+ROL.03	(612302) Pszczelarz
+ROL.04	(613003) Rolnik
+ROL.05	(331402) Technik agrobiznesu
+ROL.06	(314203) Technik hodowca koni
+ROL.07	(314203) Technik hodowca koni
+ROL.08	(311515) Technik mechanizacji rolnictwa i agrotroniki
+ROL.09	(314206) Technik pszczelarz
+ROL.10	(314207) Technik rolnik
+ROL.11	(324002) Technik weterynarii
+ROL.12	(324002) Technik weterynarii
+RYB.01	(314208) Technik rybactwa śródlądowego
+RYB.02	(314208) Technik rybactwa śródlądowego
+RYB.03	(315215) Technik rybołówstwa morskiego
+S.01	(731305) Złotnik-jubiler
+S.02	(352122) Technik realizacji nagrań i nagłośnień
+S.03	(352122) Technik realizacji nagrań i nagłośnień
+S.04	(352120) Technik realizacji dźwięku
+S.05	(352120) Technik realizacji dźwięku
+S.09	(343902) Asystent kierownika produkcji filmowej/telewizyjnej
+SPC.01	(751201) Cukiernik
+SPC.02	(816003) Operator maszyn i urządzeń przemysłu spożywczego
+SPC.02	(314403) Technik technologii żywności
+SPC.03	(751204) Piekarz
+SPC.04	(751108) Przetwórca mięsa
+SPC.05	(751103) Przetwórca ryb
+SPC.06	(314402) Technik przetwórstwa mleczarskiego
+SPC.07	(314403) Technik technologii żywności
+SPL.01	(432106) Magazynier-logistyk
+SPL.02	(333106) Technik eksploatacji portów i terminali
+SPL.03	(333106) Technik eksploatacji portów i terminali
+SPL.04	(333107) Technik logistyk
+SPL.05	(333108) Technik spedytor
+SPO.01	(341201) Asystent osoby niepełnosprawnej
+SPO.02	(341202) Opiekun osoby starszej
+SPO.03	(341203) Opiekun w domu pomocy społecznej
+SPO.04	(325905) Opiekunka dziecięca
+SPO.05	(341204) Opiekunka środowiskowa
+ST.01	(731305) Złotnik-jubiler
+ST.02	(352122) Technik realizacji nagrań i nagłośnień
+ST.03	(352122) Technik realizacji nagrań i nagłośnień
+ST.04	(352120) Technik realizacji dźwięku
+ST.05	(352120) Technik realizacji dźwięku
+ST.09	(343902) Asystent kierownika produkcji filmowej/telewizyjnej
+T.01	(911205) Pracownik pomocniczy obsługi hotelowej
+T.02	(816003) Operator maszyn i urządzeń przemysłu spożywczego
+T.02	(314403) Technik technologii żywności
+T.03	(751204) Piekarz
+T.04	(751201) Cukiernik
+T.05	(751108) Przetwórca mięsa
+T.06	(512001) Kucharz
+T.07	(515203) Technik turystyki wiejskiej
+T.08	(515203) Technik turystyki wiejskiej
+T.09	(513101) Kelner
+T.10	(513101) Kelner
+T.11	(422402) Technik hotelarstwa
+T.12	(962907) Pracownik obsługi hotelowej
+T.13	(422103) Technik obsługi turystycznej
+T.14	(422103) Technik obsługi turystycznej
+T.15	(343404) Technik żywienia i usług gastronomicznych
+T.16	(314403) Technik technologii żywności
+T.17	(314402) Technik przetwórstwa mleczarskiego
+TDR.01	(832201) Kierowca mechanik
+TDR.02	(311927) Technik transportu drogowego
+TG.01	(911205) Pracownik pomocniczy obsługi hotelowej
+TG.02	(816003) Operator maszyn i urządzeń przemysłu spożywczego
+TG.02	(314403) Technik technologii żywności
+TG.03	(751204) Piekarz
+TG.04	(751201) Cukiernik
+TG.05	(751108) Przetwórca mięsa
+TG.06	(751103) Przetwórca ryb
+TG.07	(512001) Kucharz
+TG.08	(515203) Technik turystyki wiejskiej
+TG.09	(515203) Technik turystyki wiejskiej
+TG.10	(513101) Kelner
+TG.11	(513101) Kelner
+TG.12	(422402) Technik hotelarstwa
+TG.13	(962907) Pracownik obsługi hotelowej
+TG.14	(422103) Technik obsługi turystycznej
+TG.15	(422103) Technik obsługi turystycznej
+TG.16	(343404) Technik żywienia i usług gastronomicznych
+TG.17	(314403) Technik technologii żywności
+TG.18	(314402) Technik przetwórstwa mleczarskiego
+TKO.01	(711603) Monter nawierzchni kolejowej
+TKO.02	(311407) Technik automatyk sterowania ruchem kolejowym
+TKO.03	(711701) Monter budownictwa kolejowego
+TKO.05	(311302) Technik elektroenergetyk transportu szynowego
+TKO.06	(311302) Technik elektroenergetyk transportu szynowego
+TKO.07	(311928) Technik transportu kolejowego
+TKO.08	(311928) Technik transportu kolejowego
+TLO.01	(315316) Technik awionik
+TLO.03	(315317) Technik mechanik lotniczy
+TWO.01	(711701) Monter budownictwa wodnego
+TWO.03	(721406) Monter kadłubów jednostek pływających
+TWO.05	(311942) Technik budowy jednostek pływających
+TWO.06	(315105) Technik mechanik okrętowy
+TWO.07	(315214) Technik nawigator morski
+TWO.08	(315216) Technik żeglugi śródlądowej
+TWO.09	(315216) Technik żeglugi śródlądowej
+Z.01	(325402) Technik masażysta
+Z.02	(321403) Technik ortopeda
+Z.03	(541315) Technik ochrony fizycznej osób i mienia
+Z.04	(532102) Opiekun medyczny
+Z.05	(341204) Opiekunka środowiskowa
+Z.06	(341203) Opiekun w domu pomocy społecznej
+Z.07	(341202) Opiekun osoby starszej
+Z.08	(341201) Asystent osoby niepełnosprawnej
+Z.09	(325907) Terapeuta zajęciowy
+Z.10	(325906) Ortoptystka
+Z.11	(325905) Opiekunka dziecięca
+Z.12	(325601) Ratownik medyczny
+Z.13	(325509) Technik bezpieczeństwa i higieny pracy
+Z.14	(325102) Higienistka stomatologiczna
+Z.15	(325101) Asystentka stomatologiczna
+Z.16	(322001) Dietetyk
+Z.17	(321402) Technik dentystyczny
+Z.18	(321401) Protetyk słuchu
+Z.19	(321301) Technik farmaceutyczny
+Z.20	(321104) Technik sterylizacji medycznej
+Z.21	(321103) Technik elektroradiolog
+Z.22	(311919) Technik pożarnictwa
+Z.23	(311919) Technik pożarnictwa
