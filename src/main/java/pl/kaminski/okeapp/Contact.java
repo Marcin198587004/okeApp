@@ -4,22 +4,23 @@ import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.GenerationType;
 import jakarta.persistence.Id;
 import jakarta.validation.constraints.NotEmpty;
+import org.springframework.lang.NonNull;
 
 import java.sql.Date;
 import java.sql.Time;
 import java.time.LocalDate;
-import java.util.Random;
+import java.util.List;
 import java.util.UUID;
 
 @Entity
-public class Form {
+public class Contact {
 @Id
 @GeneratedValue(strategy = GenerationType.IDENTITY)
     private long id;
 @NotEmpty
-    private String name;
+    private String firstName;
     @NotEmpty
-    private String surname;
+    private String lastName;
     @NotEmpty
     private String pesel;
     @NotEmpty
@@ -34,7 +35,12 @@ private String partOfQualification;
     private UUID uuid;
     private Date localDate;
     private Time localTime;
+    @NotEmpty
 private int randomNumber;
+
+    public static List<Contact> getForm() {
+        return null;
+    }
 
     public int getRandomNumber() {
         return randomNumber;
@@ -70,14 +76,14 @@ private int randomNumber;
 
 
 
-    public Form() {
+    public Contact() {
     }
 
-    public Form(String name, String surname, String pesel, String phoneNumber, String emailAdress, String qualification, String partOfQualification,
-                UUID uuid,Date localdate,Time localTime,int randomNumber) {
+    public Contact(String firstName, String lastName, String pesel, String phoneNumber, String emailAdress, String qualification, String partOfQualification,
+                   UUID uuid, Date localdate, Time localTime, int randomNumber) {
 
-        this.name = name;
-        this.surname = surname;
+        this.firstName = firstName;
+        this.lastName = lastName;
         this.pesel = pesel;
         this.phoneNumber = phoneNumber;
         this.emailAdress = emailAdress;
@@ -97,20 +103,20 @@ private int randomNumber;
         this.id = id;
     }
 
-    public String getName() {
-        return name;
+    public String getFirstName() {
+        return firstName;
     }
 
-    public void setName(String name) {
-        this.name = name;
+    public void setFirstName(String firstName) {
+        this.firstName = firstName;
     }
 
-    public String getSurname() {
-        return surname;
+    public String getLastName() {
+        return lastName;
     }
 
-    public void setSurname(String surname) {
-        this.surname = surname;
+    public void setLastname(String LastName) {
+        this.lastName = LastName;
     }
 
     public String getPesel() {
@@ -157,8 +163,8 @@ private int randomNumber;
     public String toString() {
         return "Form{" +
                 "id=" + id +
-                ", name='" + name + '\'' +
-                ", surname='" + surname + '\'' +
+                ", firstName='" + firstName + '\'' +
+                ", lastName='" + lastName + '\'' +
                 ", pesel=" + pesel +
                 ", phoneNumber=" + phoneNumber +
                 ", emailAdress='" + emailAdress + '\'' +

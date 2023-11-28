@@ -3,11 +3,9 @@ package pl.kaminski.okeapp;
 import com.vaadin.flow.component.UI;
 import com.vaadin.flow.component.button.Button;
 import com.vaadin.flow.component.confirmdialog.ConfirmDialog;
-import com.vaadin.flow.component.html.Div;
 import com.vaadin.flow.component.html.Span;
 import com.vaadin.flow.component.icon.VaadinIcon;
 import com.vaadin.flow.component.notification.Notification;
-import com.vaadin.flow.component.orderedlayout.FlexComponent;
 import com.vaadin.flow.component.orderedlayout.HorizontalLayout;
 import com.vaadin.flow.component.orderedlayout.VerticalLayout;
 import com.vaadin.flow.component.textfield.TextField;
@@ -36,8 +34,8 @@ public class FormGui extends VerticalLayout {
     //BeanValidationBinder<Form> binder = new BeanValidationBinder<>(Form.class);
 
     private FormRepo formRepo;
-    private TextField textFieldName;
-    private TextField textFieldSurName;
+    private TextField textFieldFirstName;
+    private TextField textFieldLastName;
     private TextField textFieldPesel;
     private TextField textFieldPhoneNumber;
 
@@ -59,22 +57,22 @@ public class FormGui extends VerticalLayout {
 
         this.formRepo = formRepo;
         {
-            textFieldName = new TextField("imię");
-            textFieldName.setMinLength(2);
-            textFieldName.setMaxLength(20);
-            textFieldName.setPattern("[A-ZŻŹĆĄŚĘŁÓŃ][a-za-zżźćńółęąśŻŹĆĄŚĘŁÓŃ]*");
+            textFieldFirstName = new TextField("imię");
+            textFieldFirstName.setMinLength(2);
+            textFieldFirstName.setMaxLength(20);
+            textFieldFirstName.setPattern("[A-ZŻŹĆĄŚĘŁÓŃ][a-za-zżźćńółęąśŻŹĆĄŚĘŁÓŃ]*");
             // textFieldName.setPattern("^[A-Z][a-z]+");
             //textFieldName.setClearButtonVisible(true);
-            textFieldName.setErrorMessage("popraw imię.Piersza litera imienia powinna byc duża ");
+            textFieldFirstName.setErrorMessage("popraw imię.Piersza litera imienia powinna byc duża ");
 
         }
         {
-            textFieldSurName = new TextField("nazwisko");
-            textFieldSurName.setMinLength(2);
-            textFieldSurName.setMaxLength(20);
-            textFieldSurName.setPattern("[A-Z][a-za-zżźćńółęąśŻŹĆĄŚĘŁÓŃ]*");
+            textFieldLastName = new TextField("nazwisko");
+            textFieldLastName.setMinLength(2);
+            textFieldLastName.setMaxLength(20);
+            textFieldLastName.setPattern("[A-Z][a-za-zżźćńółęąśŻŹĆĄŚĘŁÓŃ]*");
             //textFieldSurName.setClearButtonVisible(true);
-            textFieldSurName.setErrorMessage("popraw nazwisko. Pierwsza litera nazwiska powinna być duża");
+            textFieldLastName.setErrorMessage("popraw nazwisko. Pierwsza litera nazwiska powinna być duża");
         }
         {
             textFieldPesel = new TextField("pesel");
@@ -130,8 +128,8 @@ public class FormGui extends VerticalLayout {
 
         });
 
-        add(textFieldName);
-        add(textFieldSurName);
+        add(textFieldFirstName);
+        add(textFieldLastName);
         add(textFieldPesel);
         add(textFieldPhoneNumber);
         add(field);
@@ -140,9 +138,9 @@ public class FormGui extends VerticalLayout {
         add(button);
     }
     public void addForm() {
-        Form form = new Form();
-        form.setName(textFieldName.getValue());
-        form.setSurname(textFieldSurName.getValue());
+        Contact form = new Contact();
+        form.setFirstName(textFieldFirstName.getValue());
+        form.setLastname(textFieldLastName.getValue());
         form.setPesel(textFieldPesel.getValue());
         form.setPhoneNumber(textFieldPhoneNumber.getValue());
         form.setEmailAdress(field.getValue());
