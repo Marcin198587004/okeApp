@@ -35,7 +35,7 @@ private String partOfQualification;
     private UUID uuid;
     private Date localDate;
     private Time localTime;
-    @NotEmpty
+
 private int randomNumber;
 
     public static List<Contact> getForm() {

@@ -13,8 +13,8 @@ import com.vaadin.flow.router.Route;
 import org.springframework.beans.factory.annotation.Autowired;
 import com.vaadin.flow.component.textfield.EmailField;
 import com.vaadin.flow.component.select.Select;
+import pl.kaminski.okeapp.repository.ContactRepository;
 
-import java.awt.*;
 import java.io.*;
 import java.sql.Date;
 import java.sql.Time;
@@ -33,7 +33,7 @@ public class FormGui extends VerticalLayout {
 //   // addToNavbar(new DrawerToggle(), img);
     //BeanValidationBinder<Form> binder = new BeanValidationBinder<>(Form.class);
 
-    private FormRepo formRepo;
+    private ContactRepository formRepo;
     private TextField textFieldFirstName;
     private TextField textFieldLastName;
     private TextField textFieldPesel;
@@ -53,7 +53,7 @@ public class FormGui extends VerticalLayout {
 
 
     @Autowired
-    public FormGui(FormRepo formRepo) throws IOException {
+    public FormGui(ContactRepository formRepo) throws IOException {
 
         this.formRepo = formRepo;
         {
@@ -151,7 +151,7 @@ public class FormGui extends VerticalLayout {
 
         form.setUuid(UUID.randomUUID());
         Random randomNumber = new Random();
-        int n = randomNumber.nextInt(10000);
+        int n = randomNumber.nextInt(1000,9999);
         form.setRandomNumber(n);
 
         formRepo.save(form);
@@ -176,24 +176,26 @@ public class FormGui extends VerticalLayout {
                 "Czy wprowadzone dane są poprawne ? ");
         dialog.setCancelText("Wróć do edycji formularza");
         dialog.setCancelable(true);
-        dialog.addCancelListener(event -> {
-
-
-            setStatus("Canceled");
-        });
+//        dialog.addCancelListener(event -> {
+//
+//
+//            setStatus("Canceled");
+   // })
+    ;
 
         dialog.setConfirmButton("TAK, Wyślij formularz", confirmEvent -> {
             addForm();
             UI.getCurrent().navigate("confirmpage");
 
         });
-        dialog.addConfirmListener(event -> {
-                    setStatus("Saved");
-
-
-                }
-
-        );
+//        dialog.addConfirmListener(event -> {
+//                    setStatus("Saved");
+//
+//
+//                }
+//
+//        )
+        ;
 
         Button button = new Button("");
         button.addClickListener(event -> {
@@ -203,12 +205,12 @@ public class FormGui extends VerticalLayout {
 
         dialog.open();
     }
-    public void setStatus(String value) {
-        Label status = null;
-        status.setText("Status: " + value);
-        status.setVisible(true);
-
-    }
+//    public void setStatus(String value) {
+//        Label status = null;
+//        status.setText("Status: " + value);
+//        status.setVisible(true);
+//
+//    }
 }
 
 
