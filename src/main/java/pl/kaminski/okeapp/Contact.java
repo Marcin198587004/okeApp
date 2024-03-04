@@ -13,7 +13,7 @@ import java.util.List;
 import java.util.UUID;
 
 @Entity
-public class Contact {
+public class Contact  {
 @Id
 @GeneratedValue(strategy = GenerationType.IDENTITY)
     private long id;
@@ -115,8 +115,8 @@ private int randomNumber;
         return lastName;
     }
 
-    public void setLastname(String LastName) {
-        this.lastName = LastName;
+    public void setLastname(String lastName) {
+        this.lastName = lastName;
     }
 
     public String getPesel() {

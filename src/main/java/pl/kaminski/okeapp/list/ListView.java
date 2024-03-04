@@ -11,6 +11,7 @@ import com.vaadin.flow.component.textfield.TextField;
 import com.vaadin.flow.data.value.ValueChangeMode;
 import com.vaadin.flow.router.PageTitle;
 import com.vaadin.flow.router.Route;
+import jakarta.annotation.security.PermitAll;
 import pl.kaminski.okeapp.Contact;
 import pl.kaminski.okeapp.service.CrmService;
 
@@ -18,6 +19,7 @@ import java.util.Collections;
 
 @Route("")
 @PageTitle("Contacts | Vaadin CRM")
+@PermitAll
 public class ListView extends VerticalLayout {
     Grid<Contact> grid = new Grid<>(Contact.class);
     TextField filterText = new TextField();
@@ -29,13 +31,23 @@ private CrmService service;
         setSizeFull();
         configureGrid();
        configureForm();
+        updateList();
+        closeEditor();
 
         add(
                 getToolbar(),
                 getContent()
+              //  grid
         );
-        updateList();
-        
+//        updateList();
+//        closeEditor();
+
+    }
+
+    private void closeEditor() {
+        form.setContact(null);
+        form.setVisible(false);
+        removeClassName("editing");
     }
 
     private void updateList() {
@@ -53,6 +65,20 @@ private CrmService service;
 private void configureForm(){
         form = new ContactForm();
         form.setWidth("25em");
+        form.addListener(ContactForm.SaveEvent.class, this:: saveContact);
+        form.addListener(ContactForm.DeleteEvent.class, this:: deleteContact);
+        form.addListener(ContactForm.CloseEvent.class, e -> closeEditor());
+
+    }
+    private void saveContact (ContactForm.SaveEvent event ){
+        service.saveContact(event.getContact());
+        updateList();
+        closeEditor();
+    }
+    private void deleteContact(ContactForm.DeleteEvent event) {
+        service.deleteContact(event.getContact());
+        updateList();
+        closeEditor();
     }
     private void configureGrid() {
         grid.addClassNames("contact-grid");
@@ -61,6 +87,18 @@ private void configureForm(){
 //        grid.addColumn(contact -> contact.getStatus().getName()).setHeader("Status");
 //        grid.addColumn(contact -> contact.getCompany().getName()).setHeader("Company");
         grid.getColumns().forEach(col -> col.setAutoWidth(true));
+        grid.asSingleSelect().addValueChangeListener(e->editContact(e.getValue()));
+    }
+
+    private void editContact(Contact contact) {
+        if(contact == null){
+            closeEditor();
+
+        }else {
+            form.setContact(contact);
+            form.setVisible(true);
+            addClassName("editing");
+        }
     }
 
     private HorizontalLayout getToolbar() {
@@ -70,10 +108,15 @@ private void configureForm(){
         filterText.addValueChangeListener(e ->updateList());
 
         Button addContactButton = new Button("Add contact");
-
+addContactButton.addClickListener(e->addContact());
         var toolbar = new HorizontalLayout(filterText, addContactButton);
         toolbar.addClassName("toolbar");
         return toolbar;
+    }
+
+    private void addContact() {
+        grid.asSingleSelect().clear();
+        editContact(new Contact());
     }
 }
 

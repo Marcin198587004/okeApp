@@ -25,7 +25,7 @@ import java.util.List;
 
 
 @Route
-public class FormGui extends VerticalLayout {
+public class  FormGui extends VerticalLayout {
 
 
 //    Image img = new Image("http://i.imgur.com/GPpnszs.png", "Vaadin Logo");
