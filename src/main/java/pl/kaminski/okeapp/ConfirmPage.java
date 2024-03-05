@@ -10,7 +10,7 @@ import com.vaadin.flow.component.orderedlayout.HorizontalLayout;
 import com.vaadin.flow.router.Route;
 
 
-@Route("confirmpage")
+@Route
 public class ConfirmPage extends Div {
 
 

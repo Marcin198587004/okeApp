@@ -14,10 +14,11 @@ import com.vaadin.flow.router.Route;
 import jakarta.annotation.security.PermitAll;
 import pl.kaminski.okeapp.Contact;
 import pl.kaminski.okeapp.service.CrmService;
+import pl.kaminski.okeapp.views.MainLayout;
 
 import java.util.Collections;
 
-@Route("")
+@Route(value="",layout = MainLayout.class)
 @PageTitle("Contacts | Vaadin CRM")
 @PermitAll
 public class ListView extends VerticalLayout {
