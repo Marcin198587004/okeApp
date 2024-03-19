@@ -10,11 +10,10 @@ import com.vaadin.flow.component.orderedlayout.HorizontalLayout;
 import com.vaadin.flow.router.Route;
 
 
-@Route
+@Route("/confirm")
 public class ConfirmPage extends Div {
-
-
-
+//
+//
 //        private Span status;
 //
 //        public ConfirmPage() {
@@ -62,8 +61,8 @@ public class ConfirmPage extends Div {
 //            status.setText("Status: " + value);
 //            status.setVisible(true);
 //        }
-
-    }
+//
+}
 
 
 

@@ -10,6 +10,7 @@ import com.vaadin.flow.component.orderedlayout.HorizontalLayout;
 import com.vaadin.flow.component.orderedlayout.VerticalLayout;
 import com.vaadin.flow.component.textfield.TextField;
 import com.vaadin.flow.router.Route;
+import jakarta.annotation.security.PermitAll;
 import org.springframework.web.bind.annotation.GetMapping;
 
 //@Route
@@ -21,7 +22,8 @@ import org.springframework.web.bind.annotation.GetMapping;
 //add(placeHolderField);
 //}
 
-@Route("potwierdzenie")
+@Route("/first")
+@PermitAll
 public class FirstPageFormGui extends Div {
 
     private Span status;
@@ -51,7 +53,7 @@ public class FirstPageFormGui extends Div {
         dialog.addConfirmListener(event -> setStatus("potwierdzone"));
 
        dialog.setConfirmButton("TAK, przejdź do formularza", confirmEvent -> {
-           ;UI.getCurrent().navigate("formgui");
+           UI.getCurrent().navigate("formgui");
 
        Button button = new Button();
 //        button.addClickListener(event -> {

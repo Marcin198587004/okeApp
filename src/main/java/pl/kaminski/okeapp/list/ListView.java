@@ -2,6 +2,7 @@ package pl.kaminski.okeapp.list;
 
 
 //import com.example.application.data.entity.Contact;
+
 import com.vaadin.flow.component.Component;
 import com.vaadin.flow.component.button.Button;
 import com.vaadin.flow.component.grid.Grid;
@@ -13,32 +14,31 @@ import com.vaadin.flow.router.PageTitle;
 import com.vaadin.flow.router.Route;
 import jakarta.annotation.security.PermitAll;
 import pl.kaminski.okeapp.Contact;
-import pl.kaminski.okeapp.service.CrmService;
+import pl.kaminski.okeapp.service.ContactService;
 import pl.kaminski.okeapp.views.MainLayout;
 
-import java.util.Collections;
-
-@Route(value="",layout = MainLayout.class)
-@PageTitle("Contacts | Vaadin CRM")
+@Route(value = "/list", layout = MainLayout.class)
 @PermitAll
+@PageTitle("Contacts | Vaadin CRM")
 public class ListView extends VerticalLayout {
     Grid<Contact> grid = new Grid<>(Contact.class);
     TextField filterText = new TextField();
-ContactForm form;
-private CrmService service;
-    public ListView(CrmService service) {
+    ContactForm form;
+    private ContactService service;
+
+    public ListView(ContactService service) {
         this.service = service;
         addClassName("list-view");
         setSizeFull();
         configureGrid();
-       configureForm();
+        configureForm();
         updateList();
         closeEditor();
 
         add(
                 getToolbar(),
                 getContent()
-              //  grid
+                //  grid
         );
 //        updateList();
 //        closeEditor();
@@ -55,47 +55,51 @@ private CrmService service;
         grid.setItems(service.findAllContacts(filterText.getValue()));
     }
 
-    private Component getContent(){
-        HorizontalLayout content = new HorizontalLayout(grid,form);
-        content.setFlexGrow(2,grid);
-        content.setFlexGrow(1,form);
+    private Component getContent() {
+        HorizontalLayout content = new HorizontalLayout(grid, form);
+        content.setFlexGrow(2, grid);
+        content.setFlexGrow(1, form);
         content.addClassName("content");
         content.setSizeFull();
         return content;
     }
-private void configureForm(){
+
+    private void configureForm() {
         form = new ContactForm();
         form.setWidth("25em");
-        form.addListener(ContactForm.SaveEvent.class, this:: saveContact);
-        form.addListener(ContactForm.DeleteEvent.class, this:: deleteContact);
+        form.addListener(ContactForm.SaveEvent.class, this::saveContact);
+        form.addListener(ContactForm.DeleteEvent.class, this::deleteContact);
         form.addListener(ContactForm.CloseEvent.class, e -> closeEditor());
 
     }
-    private void saveContact (ContactForm.SaveEvent event ){
+
+    private void saveContact(ContactForm.SaveEvent event) {
         service.saveContact(event.getContact());
         updateList();
         closeEditor();
     }
+
     private void deleteContact(ContactForm.DeleteEvent event) {
         service.deleteContact(event.getContact());
         updateList();
         closeEditor();
     }
+
     private void configureGrid() {
         grid.addClassNames("contact-grid");
         grid.setSizeFull();
-        grid.setColumns("firstName", "lastName","pesel", "emailAdress","qualification","partOfQualification","randomNumber");
+        grid.setColumns("firstName", "lastName", "pesel", "emailAdress", "qualification", "partOfQualification", "randomNumber");
 //        grid.addColumn(contact -> contact.getStatus().getName()).setHeader("Status");
 //        grid.addColumn(contact -> contact.getCompany().getName()).setHeader("Company");
         grid.getColumns().forEach(col -> col.setAutoWidth(true));
-        grid.asSingleSelect().addValueChangeListener(e->editContact(e.getValue()));
+        grid.asSingleSelect().addValueChangeListener(e -> editContact(e.getValue()));
     }
 
     private void editContact(Contact contact) {
-        if(contact == null){
+        if (contact == null) {
             closeEditor();
 
-        }else {
+        } else {
             form.setContact(contact);
             form.setVisible(true);
             addClassName("editing");
@@ -106,10 +110,10 @@ private void configureForm(){
         filterText.setPlaceholder("Filter by name...");
         filterText.setClearButtonVisible(true);
         filterText.setValueChangeMode(ValueChangeMode.LAZY);
-        filterText.addValueChangeListener(e ->updateList());
+        filterText.addValueChangeListener(e -> updateList());
 
         Button addContactButton = new Button("Add contact");
-addContactButton.addClickListener(e->addContact());
+        addContactButton.addClickListener(e -> addContact());
         var toolbar = new HorizontalLayout(filterText, addContactButton);
         toolbar.addClassName("toolbar");
         return toolbar;

@@ -1,4 +1,5 @@
 package pl.kaminski.okeapp;
+
 import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.GenerationType;
@@ -13,11 +14,11 @@ import java.util.List;
 import java.util.UUID;
 
 @Entity
-public class Contact  {
-@Id
-@GeneratedValue(strategy = GenerationType.IDENTITY)
+public class Contact {
+    @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     private long id;
-@NotEmpty
+    @NotEmpty
     private String firstName;
     @NotEmpty
     private String lastName;
@@ -28,15 +29,18 @@ public class Contact  {
     @NotEmpty
     private String emailAdress;
     @NotEmpty
-private String qualification;
+    private String qualification;
     @NotEmpty
-private String partOfQualification;
+    private String partOfQualification;
+
+
+
 
     private UUID uuid;
     private Date localDate;
     private Time localTime;
 
-private int randomNumber;
+    private int randomNumber;
 
     public static List<Contact> getForm() {
         return null;
@@ -75,7 +79,6 @@ private int randomNumber;
     }
 
 
-
     public Contact() {
     }
 
@@ -89,10 +92,10 @@ private int randomNumber;
         this.emailAdress = emailAdress;
         this.qualification = qualification;
         this.partOfQualification = partOfQualification;
-        this.uuid =uuid;
-        this.localDate=localdate;
-        this.localTime=localTime;
-        this.randomNumber= randomNumber;
+        this.uuid = uuid;
+        this.localDate = localdate;
+        this.localTime = localTime;
+        this.randomNumber = randomNumber;
     }
 
     public long getId() {
@@ -176,6 +179,7 @@ private int randomNumber;
                 ", randomNumber='" + randomNumber + '\'' +
                 '}';
     }
+
     public void localDate() {
         LocalDate localDate = LocalDate.now();
 

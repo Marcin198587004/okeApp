@@ -5,15 +5,16 @@ import com.vaadin.flow.component.html.Span;
 import com.vaadin.flow.component.orderedlayout.VerticalLayout;
 import com.vaadin.flow.router.PageTitle;
 import com.vaadin.flow.router.Route;
-import pl.kaminski.okeapp.service.CrmService;
+import jakarta.annotation.security.PermitAll;
+import pl.kaminski.okeapp.service.ContactService;
 
 @Route(value ="dashboard", layout = MainLayout.class)
 @PageTitle("Dashboard | Vaadin CRM")
 public class DashboardView extends VerticalLayout {
 
-    private CrmService service;
+    private ContactService service;
 
-    public DashboardView (CrmService service) {
+    public DashboardView (ContactService service) {
         this.service = service;
         addClassName("dashboard-view");
         setDefaultHorizontalComponentAlignment(Alignment.CENTER);

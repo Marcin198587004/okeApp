@@ -9,9 +9,8 @@ import pl.kaminski.okeapp.Contact;
 
 import java.util.List;
 
-
-@Repository
 public interface ContactRepository extends JpaRepository<Contact, Long>{
+
 
     @Query("select c from Contact c " +
             "where lower(c.firstName) like lower(concat('%', :searchTerm, '%')) " +

@@ -20,33 +20,32 @@ public class MainLayout extends AppLayout {
 
     private final SecurityService securityService;
 
-    public MainLayout(SecurityService securityService){
+    public MainLayout(SecurityService securityService) {
         this.securityService = securityService;
         createHeader();
-createDrawer();
+        createDrawer();
     }
 
-    private void createHeader(){
-        H1 logo=new H1("Vaadin CRM");
-logo.addClassNames("text-l","m-m" );
+    private void createHeader() {
+        H1 logo = new H1("Vaadin CRM");
+        logo.addClassNames("text-l", "m-m");
         Button logOut = new Button("Log out", e -> securityService.logout());
 
-        HorizontalLayout header = new HorizontalLayout(new DrawerToggle(), logo,logOut);
-    header.setDefaultVerticalComponentAlignment(FlexComponent.Alignment.CENTER);
-    header.expand(logo);
-    header.setWidthFull();
-    header.addClassNames("py-0","px-m");
-    addToNavbar(header);
+        HorizontalLayout header = new HorizontalLayout(new DrawerToggle(), logo, logOut);
+        header.setDefaultVerticalComponentAlignment(FlexComponent.Alignment.CENTER);
+        header.expand(logo);
+        header.setWidthFull();
+        header.addClassNames("py-0", "px-m");
+        addToNavbar(header);
+    }
 
-
-        }
     private void createDrawer() {
         RouterLink listView = new RouterLink("List", ListView.class);
         listView.setHighlightCondition(HighlightConditions.sameLocation());
-addToDrawer(new VerticalLayout(
-        listView,
-        new RouterLink("Dashboard", DashboardView.class)
-));
+        addToDrawer(new VerticalLayout(
+                listView,
+                new RouterLink("Dashboard", DashboardView.class)
+        ));
 
     }
-    }
+}

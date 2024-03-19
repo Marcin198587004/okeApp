@@ -7,14 +7,20 @@ import pl.kaminski.okeapp.repository.ContactRepository;
 import java.util.List;
 
 @Service
-public class CrmService {
+public class ContactService {
     private final ContactRepository contactRepository;
-    public CrmService(ContactRepository contactRepository) {
-        this.contactRepository = contactRepository;
 
+    public ContactService(ContactRepository contactRepository) {
+        this.contactRepository = contactRepository;
     }
+
+    //Todo rzuc wyjatkiem dla null
     public List<Contact> findAllContacts(String filterText) {
-        if (filterText == null || filterText.isEmpty()) {
+        if (filterText == null){
+            throw new IllegalArgumentException("filterText is null");
+        }
+
+        if (filterText.isEmpty()) {
             return contactRepository.findAll();
         } else {
             return contactRepository.search(filterText);
@@ -23,15 +29,16 @@ public class CrmService {
     public long countContact(){
         return contactRepository.count();
     }
+
     public void deleteContact(Contact contact){
-contactRepository.delete(contact);
+    contactRepository.delete(contact);
 
     }
     public void saveContact(Contact contact){
         if(contact == null) {
-            System.err.println("Contakt is null");
-            return;
+            throw new IllegalArgumentException("Contact is null");
         }
+
         contactRepository.save(contact);
     }
 

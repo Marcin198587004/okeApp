@@ -12,8 +12,6 @@ public class OkeAppApplication extends SpringApplication {
 
     public static void main(String[] args) {
          SpringApplication.run(OkeAppApplication.class, args);
-
-
     }
 
 }

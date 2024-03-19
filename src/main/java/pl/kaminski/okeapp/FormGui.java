@@ -3,17 +3,21 @@ package pl.kaminski.okeapp;
 import com.vaadin.flow.component.UI;
 import com.vaadin.flow.component.button.Button;
 import com.vaadin.flow.component.confirmdialog.ConfirmDialog;
+import com.vaadin.flow.component.html.Div;
 import com.vaadin.flow.component.html.Span;
 import com.vaadin.flow.component.icon.VaadinIcon;
 import com.vaadin.flow.component.notification.Notification;
+import com.vaadin.flow.component.orderedlayout.FlexComponent;
 import com.vaadin.flow.component.orderedlayout.HorizontalLayout;
 import com.vaadin.flow.component.orderedlayout.VerticalLayout;
 import com.vaadin.flow.component.textfield.TextField;
 import com.vaadin.flow.router.Route;
+import jakarta.annotation.security.PermitAll;
 import org.springframework.beans.factory.annotation.Autowired;
 import com.vaadin.flow.component.textfield.EmailField;
 import com.vaadin.flow.component.select.Select;
 import pl.kaminski.okeapp.repository.ContactRepository;
+import pl.kaminski.okeapp.utils.QualificationUtil;
 
 import java.io.*;
 import java.sql.Date;
@@ -24,8 +28,9 @@ import java.util.*;
 import java.util.List;
 
 
-@Route
-public class   FormGui extends VerticalLayout {
+@Route(value = "/formgui")
+@PermitAll
+public class FormGui extends VerticalLayout {
 
 
 //    Image img = new Image("http://i.imgur.com/GPpnszs.png", "Vaadin Logo");
@@ -54,6 +59,9 @@ public class   FormGui extends VerticalLayout {
 
     @Autowired
     public FormGui(ContactRepository formRepo) throws IOException {
+        HorizontalLayout layout = new HorizontalLayout();
+        layout.setAlignItems(FlexComponent.Alignment.CENTER);
+        layout.setJustifyContentMode(FlexComponent.JustifyContentMode.CENTER);
 
         this.formRepo = formRepo;
         {
@@ -92,19 +100,7 @@ public class   FormGui extends VerticalLayout {
         }
         {
             select.setLabel("Wybierz kwalifikacje");
-            File file = new File("C:\\Users\\marcin.k\\IdeaProjects\\okeApp\\src\\main\\resources\\static\\qualification.txt");
-            List<String> items = new ArrayList<>();
-
-            try (BufferedReader br = new BufferedReader(new FileReader(file))) {
-                String line;
-                while ((line = br.readLine()) != null) {
-                    items.add(line);
-                }
-            } catch (IOException e) {
-                e.printStackTrace();
-            }
-
-            select.setItems(items);
+            select.setItems(QualificationUtil.readFromFile());
         }
 
         {
@@ -137,6 +133,7 @@ public class   FormGui extends VerticalLayout {
         add(select2);
         add(button);
     }
+
     public void addForm() {
         Contact form = new Contact();
         form.setFirstName(textFieldFirstName.getValue());
@@ -151,7 +148,7 @@ public class   FormGui extends VerticalLayout {
 
         form.setUuid(UUID.randomUUID());
         Random randomNumber = new Random();
-        int n = randomNumber.nextInt(1000,9999);
+        int n = randomNumber.nextInt(1000, 9999);
         form.setRandomNumber(n);
 
         formRepo.save(form);
@@ -180,8 +177,8 @@ public class   FormGui extends VerticalLayout {
 //
 //
 //            setStatus("Canceled");
-   // })
-    ;
+        // })
+        ;
 
         dialog.setConfirmButton("TAK, Wyślij formularz", confirmEvent -> {
             addForm();
