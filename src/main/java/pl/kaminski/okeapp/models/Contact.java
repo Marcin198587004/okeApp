@@ -9,6 +9,7 @@ import jakarta.validation.constraints.NotEmpty;
 import java.sql.Date;
 import java.sql.Time;
 import java.time.LocalDate;
+import java.time.LocalTime;
 import java.util.List;
 import java.util.UUID;
 
@@ -19,7 +20,7 @@ public class Contact {
     private long id;
     @NotEmpty
     private String firstName;
-//    @NotEmpty
+    @NotEmpty
     private String lastName;
     @NotEmpty
     private String pesel;
@@ -36,53 +37,15 @@ public class Contact {
 
 
     private UUID uuid;
-    private Date localDate;
-    private Time localTime;
-
+    private LocalDate localDate;
+    private LocalTime localTime;
     private int randomNumber;
-
-    public static List<Contact> getForm() {
-        return null;
-    }
-
-    public int getRandomNumber() {
-        return randomNumber;
-    }
-
-    public void setRandomNumber(int randomNumber) {
-        this.randomNumber = randomNumber;
-    }
-
-    public UUID getUuid() {
-        return uuid;
-    }
-
-    public void setUuid(UUID uuid) {
-        this.uuid = uuid;
-    }
-
-    public Date getLocaldate() {
-        return localDate;
-    }
-
-    public void setLocaldate(Date localdate) {
-        this.localDate = localdate;
-    }
-
-    public Time getLocalTime() {
-        return localTime;
-    }
-
-    public void setLocalTime(Time localTime) {
-        this.localTime = localTime;
-    }
-
 
     public Contact() {
     }
 
     public Contact(String firstName, String lastName, String pesel, String phoneNumber, String emailAdress, String qualification, String partOfQualification,
-                   UUID uuid, Date localdate, Time localTime, int randomNumber) {
+                   UUID uuid, LocalDate localdate, LocalTime localTime, int randomNumber) {
 
         this.firstName = firstName;
         this.lastName = lastName;
@@ -95,6 +58,25 @@ public class Contact {
         this.localDate = localdate;
         this.localTime = localTime;
         this.randomNumber = randomNumber;
+    }
+
+
+    @Override
+    public String toString() {
+        return "Form{" +
+                "id=" + id +
+                ", firstName='" + firstName + '\'' +
+                ", lastName='" + lastName + '\'' +
+                ", pesel=" + pesel +
+                ", phoneNumber=" + phoneNumber +
+                ", emailAdress='" + emailAdress + '\'' +
+                ", qualification='" + qualification + '\'' +
+                ", partOfQualification='" + partOfQualification + '\'' +
+                ", uuid='" + uuid + '\'' +
+                ", localDate='" + localDate + '\'' +
+                ", localTime='" + localTime + '\'' +
+                ", randomNumber='" + randomNumber + '\'' +
+                '}';
     }
 
     public long getId() {
@@ -117,7 +99,7 @@ public class Contact {
         return lastName;
     }
 
-    public void setLastname(String lastName) {
+    public void setLastName(String lastName) {
         this.lastName = lastName;
     }
 
@@ -161,28 +143,35 @@ public class Contact {
         this.partOfQualification = partOfQualification;
     }
 
-    @Override
-    public String toString() {
-        return "Form{" +
-                "id=" + id +
-                ", firstName='" + firstName + '\'' +
-                ", lastName='" + lastName + '\'' +
-                ", pesel=" + pesel +
-                ", phoneNumber=" + phoneNumber +
-                ", emailAdress='" + emailAdress + '\'' +
-                ", qualification='" + qualification + '\'' +
-                ", partOfQualification='" + partOfQualification + '\'' +
-                ", uuid='" + uuid + '\'' +
-                ", localDate='" + localDate + '\'' +
-                ", localTime='" + localTime + '\'' +
-                ", randomNumber='" + randomNumber + '\'' +
-                '}';
+    public UUID getUuid() {
+        return uuid;
     }
 
-    public void localDate() {
-        LocalDate localDate = LocalDate.now();
-
-
+    public void setUuid(UUID uuid) {
+        this.uuid = uuid;
     }
 
+    public LocalDate getLocalDate() {
+        return localDate;
+    }
+
+    public void setLocalDate(LocalDate localDate) {
+        this.localDate = localDate;
+    }
+
+    public LocalTime getLocalTime() {
+        return localTime;
+    }
+
+    public void setLocalTime(LocalTime localTime) {
+        this.localTime = localTime;
+    }
+
+    public int getRandomNumber() {
+        return randomNumber;
+    }
+
+    public void setRandomNumber(int randomNumber) {
+        this.randomNumber = randomNumber;
+    }
 }

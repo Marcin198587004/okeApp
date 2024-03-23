@@ -131,14 +131,14 @@ public class FormGui extends VerticalLayout {
     public void addForm() {
         Contact form = new Contact();
         form.setFirstName(textFieldFirstName.getValue());
-        form.setLastname(textFieldLastName.getValue());
+        form.setLastName(textFieldLastName.getValue());
         form.setPesel(textFieldPesel.getValue());
         form.setPhoneNumber(textFieldPhoneNumber.getValue());
         form.setEmailAdress(field.getValue());
         form.setQualification(select.getValue());
         form.setPartOfQualification(select2.getValue());
-        form.setLocalTime(Time.valueOf(LocalTime.now()));
-        form.setLocaldate(Date.valueOf(LocalDate.now()));
+        form.setLocalTime(LocalTime.now());
+        form.setLocalDate(LocalDate.now());
         form.setUuid(UUID.randomUUID());
 
         int n = randomNumber.nextInt(1000, 9999);

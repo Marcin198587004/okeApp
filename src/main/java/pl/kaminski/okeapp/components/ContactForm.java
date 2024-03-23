@@ -15,6 +15,7 @@ import com.vaadin.flow.component.orderedlayout.VerticalLayout;
 import com.vaadin.flow.component.select.Select;
 import com.vaadin.flow.component.textfield.EmailField;
 import com.vaadin.flow.component.textfield.IntegerField;
+import com.vaadin.flow.component.textfield.NumberField;
 import com.vaadin.flow.component.textfield.TextField;
 import com.vaadin.flow.data.binder.BeanValidationBinder;
 import com.vaadin.flow.data.binder.Binder;
@@ -23,9 +24,18 @@ import jakarta.validation.ValidationException;
 import pl.kaminski.okeapp.models.Contact;
 import pl.kaminski.okeapp.utils.QualificationUtil;
 
+import java.sql.Date;
+import java.sql.Time;
+import java.time.LocalDate;
+import java.time.LocalTime;
+import java.util.Random;
+import java.util.UUID;
+
 
 public class ContactForm extends VerticalLayout {
     Binder<Contact> binder = new BeanValidationBinder<>(Contact.class);
+
+    Random random = new Random();
     Contact contact = new Contact();
 
     TextField firstName = new TextField("firstName");
@@ -46,13 +56,11 @@ public class ContactForm extends VerticalLayout {
 
         binder.bindInstanceFields(this);
 
-        lastName.setReadOnly(false);
         qualification.setLabel("Wybierz kwalifikacje");
         partOfQualification.setLabel("Wybierz forme");
 
         qualification.setItems(QualificationUtil.readFromFile());
-        partOfQualification.setItems("pisemny", "praktyczny");
-
+        partOfQualification.setItems("część pisemna", "częśc praktyczna");
 
         add(
                 firstName,
@@ -62,6 +70,7 @@ public class ContactForm extends VerticalLayout {
                 emailAdress,
                 qualification,
                 partOfQualification,
+
 
                 createButtonsLayout()
         );
@@ -89,9 +98,11 @@ public class ContactForm extends VerticalLayout {
 
     private void validateAndSave() {
         try {
-            System.out.println(contact);
             binder.writeBean(contact);
-            System.out.println(contact);
+            contact.setRandomNumber(random.nextInt(1000,9999));
+            contact.setLocalTime(LocalTime.now());
+            contact.setLocalDate(LocalDate.now());
+            contact.setUuid(UUID.randomUUID());
             fireEvent(new SaveEvent(this, contact));
         } catch (ValidationException | com.vaadin.flow.data.binder.ValidationException e) {
             e.printStackTrace();
