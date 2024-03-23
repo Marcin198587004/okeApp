@@ -1,4 +1,4 @@
-package pl.kaminski.okeapp;
+package pl.kaminski.okeapp.views;
 
 import com.vaadin.flow.component.UI;
 import com.vaadin.flow.component.button.Button;
@@ -10,6 +10,7 @@ import com.vaadin.flow.component.orderedlayout.HorizontalLayout;
 import com.vaadin.flow.component.orderedlayout.VerticalLayout;
 import com.vaadin.flow.component.textfield.TextField;
 import com.vaadin.flow.router.Route;
+import com.vaadin.flow.server.auth.AnonymousAllowed;
 import jakarta.annotation.security.PermitAll;
 import org.springframework.web.bind.annotation.GetMapping;
 
@@ -22,8 +23,8 @@ import org.springframework.web.bind.annotation.GetMapping;
 //add(placeHolderField);
 //}
 
-@Route("/first")
-@PermitAll
+@Route("")
+@AnonymousAllowed
 public class FirstPageFormGui extends Div {
 
     private Span status;
@@ -37,6 +38,7 @@ public class FirstPageFormGui extends Div {
         status.setVisible(false);
 
         ConfirmDialog dialog = new ConfirmDialog();
+        dialog.setCloseOnEsc(true);
         dialog.setHeader("Rozpoczynasz wniosek o wgląd egzaminu zawodowego");
         dialog.setText(
                 "Czy zdawałeś egzamin w województwie mazowieckim?");
@@ -45,26 +47,21 @@ public class FirstPageFormGui extends Div {
         dialog.setCancelText("NIE");
         dialog.addCancelListener(event -> setText("spadaj do innego OKE"));
 
-//        dialog.setRejectable(true);
-//        dialog.setRejectText("NIE");
-//        dialog.addRejectListener(event -> setText("spadaj do innego OKE"));
 
         dialog.setConfirmText("TAK");
         dialog.addConfirmListener(event -> setStatus("potwierdzone"));
 
-       dialog.setConfirmButton("TAK, przejdź do formularza", confirmEvent -> {
-           UI.getCurrent().navigate("formgui");
+        dialog.setConfirmButton("TAK, przejdź do formularza", confirmEvent -> {
+            UI.getCurrent().navigate("formgui");
+        });
 
-       Button button = new Button();
-//        button.addClickListener(event -> {
-//            UI.getCurrent().navigate("formgui");
-            //dialog.open();
-            status.setVisible(false);
+        UI.getCurrent().addBeforeLeaveListener(event -> {
+            dialog.close();
         });
 
         dialog.open();
 
-        layout.add( status);
+        layout.add(status);
         add(layout);
 
         // Center the button within the example

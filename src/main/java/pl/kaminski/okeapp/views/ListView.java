@@ -1,4 +1,4 @@
-package pl.kaminski.okeapp.list;
+package pl.kaminski.okeapp.views;
 
 
 //import com.example.application.data.entity.Contact;
@@ -13,9 +13,10 @@ import com.vaadin.flow.data.value.ValueChangeMode;
 import com.vaadin.flow.router.PageTitle;
 import com.vaadin.flow.router.Route;
 import jakarta.annotation.security.PermitAll;
-import pl.kaminski.okeapp.Contact;
+import pl.kaminski.okeapp.MainLayout;
+import pl.kaminski.okeapp.models.Contact;
+import pl.kaminski.okeapp.components.ContactForm;
 import pl.kaminski.okeapp.service.ContactService;
-import pl.kaminski.okeapp.views.MainLayout;
 
 @Route(value = "/list", layout = MainLayout.class)
 @PermitAll

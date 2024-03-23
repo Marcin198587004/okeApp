@@ -1,7 +1,7 @@
 package pl.kaminski.okeapp.service;
 
 import org.springframework.stereotype.Service;
-import pl.kaminski.okeapp.Contact;
+import pl.kaminski.okeapp.models.Contact;
 import pl.kaminski.okeapp.repository.ContactRepository;
 
 import java.util.List;

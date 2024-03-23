@@ -4,8 +4,9 @@ import com.vaadin.flow.component.UI;
 import com.vaadin.flow.server.VaadinServletRequest;
 import org.springframework.security.web.authentication.logout.SecurityContextLogoutHandler;
 import org.springframework.stereotype.Component;
+import org.springframework.stereotype.Service;
 
-@Component //TODO zmien na service
+@Service
 public class SecurityService {
     public void logout() {
         UI.getCurrent().getPage().setLocation("/");

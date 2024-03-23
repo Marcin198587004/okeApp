@@ -2,10 +2,8 @@ package pl.kaminski.okeapp.repository;
 
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.data.jpa.repository.Query;
-import org.springframework.data.repository.CrudRepository;
 import org.springframework.data.repository.query.Param;
-import org.springframework.stereotype.Repository;
-import pl.kaminski.okeapp.Contact;
+import pl.kaminski.okeapp.models.Contact;
 
 import java.util.List;
 

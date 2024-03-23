@@ -1,4 +1,4 @@
-package pl.kaminski.okeapp.list;
+package pl.kaminski.okeapp.components;
 
 
 //import com.example.application.data.entity.Company;
@@ -10,7 +10,6 @@ import com.vaadin.flow.component.ComponentEventListener;
 import com.vaadin.flow.component.Key;
 import com.vaadin.flow.component.button.Button;
 import com.vaadin.flow.component.button.ButtonVariant;
-import com.vaadin.flow.component.html.Div;
 import com.vaadin.flow.component.orderedlayout.HorizontalLayout;
 import com.vaadin.flow.component.orderedlayout.VerticalLayout;
 import com.vaadin.flow.component.select.Select;
@@ -21,7 +20,7 @@ import com.vaadin.flow.data.binder.BeanValidationBinder;
 import com.vaadin.flow.data.binder.Binder;
 import com.vaadin.flow.shared.Registration;
 import jakarta.validation.ValidationException;
-import pl.kaminski.okeapp.Contact;
+import pl.kaminski.okeapp.models.Contact;
 import pl.kaminski.okeapp.utils.QualificationUtil;
 
 
@@ -29,17 +28,14 @@ public class ContactForm extends VerticalLayout {
     Binder<Contact> binder = new BeanValidationBinder<>(Contact.class);
     Contact contact = new Contact();
 
-    TextField lastName;
-    TextField firstName;
-    TextField pesel;
-    EmailField emailAdress;
-    Select<String> qualification;
-    Select<String> partOfQualification;
-    IntegerField randomNumber;
+    TextField firstName = new TextField("firstName");
+    TextField lastName = new TextField("lastName");
+    TextField pesel = new TextField("pesel");
+    TextField phoneNumber = new TextField("phoneNumber");
+    EmailField emailAdress = new EmailField("emailAdress");
+    Select<String> qualification = new Select<>();
+    Select<String> partOfQualification = new Select<>();
 
-
-//        ComboBox<Status> status = new ComboBox<>("Status");
-//        ComboBox<Company> company = new ComboBox<>("Company");
 
     Button save = new Button("Save");
     Button delete = new Button("Delete");
@@ -47,25 +43,22 @@ public class ContactForm extends VerticalLayout {
 
     public ContactForm() {
         addClassName("contact-form");
+
         binder.bindInstanceFields(this);
 
-        lastName = new TextField("lastName");
-        firstName = new TextField("firstName");
-        pesel = new TextField("pesel");
-        emailAdress = new EmailField("emailAdress");
+        lastName.setReadOnly(false);
         qualification.setLabel("Wybierz kwalifikacje");
         partOfQualification.setLabel("Wybierz forme");
 
         qualification.setItems(QualificationUtil.readFromFile());
         partOfQualification.setItems("pisemny", "praktyczny");
-        randomNumber = new IntegerField("RandomNumber");
-        randomNumber.setValue(100); //TODO stworz
-        lastName.setReadOnly(false);
+
 
         add(
-                lastName,
                 firstName,
+                lastName,
                 pesel,
+                phoneNumber,
                 emailAdress,
                 qualification,
                 partOfQualification,
@@ -83,8 +76,9 @@ public class ContactForm extends VerticalLayout {
         save.addThemeVariants(ButtonVariant.LUMO_PRIMARY);
         delete.addThemeVariants(ButtonVariant.LUMO_ERROR);
         cancel.addThemeVariants(ButtonVariant.LUMO_TERTIARY);
-        save.addClickListener(clickEvent -> validateAndSave());
-        //save.addClickListener(event-> fireEvent(new SaveEvent(this,contact)));
+        save.addClickListener(clickEvent -> {
+            validateAndSave();
+        });
         delete.addClickListener(event -> fireEvent(new DeleteEvent(this, contact)));
         cancel.addClickListener(event -> fireEvent(new CloseEvent(this)));
         save.addClickShortcut(Key.ENTER);
@@ -95,7 +89,9 @@ public class ContactForm extends VerticalLayout {
 
     private void validateAndSave() {
         try {
+            System.out.println(contact);
             binder.writeBean(contact);
+            System.out.println(contact);
             fireEvent(new SaveEvent(this, contact));
         } catch (ValidationException | com.vaadin.flow.data.binder.ValidationException e) {
             e.printStackTrace();
